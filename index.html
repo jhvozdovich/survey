@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./css/styles.css" rel="stylesheet" type="text/css">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Survey - Tell Us About Yourself!</h1>
+      <form id="survey">
+        <div class="form-group">
+          <label for="name">Your full name please:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+        <div class="form-group">
+          <label for="leastFavColor">What is your least favorite color?</label>
+          <input id="leastFavColor" class="form-control" type="color">
+        </div>
+        <div class="form-group">
+          <label for="birthday">What is your birthday?</label>
+          <input id="birthday" class="form-control" type="date">
+        </div>
+        <div>
+          <h4>Are you a cat person or a dog person?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="pet" value="Dog Person" checked>
+              Dog person
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="pet" value="Cat Person">
+              Cat person
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="pet" value="Neither" checked>
+              Neither
+            </label>
+          </div>
+        </div>
+        <button type="submit" class=btn>Submit!</button>
+      </form>
+
+      <div id="verifyForm">
+        <h1>Verify your results!</h1>
+        <ul>
+          <li>Your name: <span class="name"></span></li>
+          <li>Your favorite color: <span class="color"></span></li>
+          <li>Your least favorite color: <span class="leastFavColor"></span></li>
+          <li>Your birthday: <span class="birthday"></span></li>
+          <li>Dog or cat person: <span class="pet"></span></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
